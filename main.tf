@@ -20,7 +20,7 @@ resource "fakewebservices_vpc" "primary_vpc" {
 }
 
 resource "fakewebservices_server" "servers" {
-  count = 2
+  count = 20
 
   name = "Server ${count.index + 1}"
   type = "t2.micro"
@@ -34,5 +34,5 @@ resource "fakewebservices_load_balancer" "primary_lb" {
 
 resource "fakewebservices_database" "prod_db" {
   name = "Production DB"
-  size = 256
+  size = 1024
 }

@@ -5,7 +5,7 @@ terraform {
     organization = "example-org-e0af2b"
 
     workspaces {
-      name = "getting-started"
+      name =       "getting-started"
     }
   }
 
